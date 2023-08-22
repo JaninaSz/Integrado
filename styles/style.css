@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+.cont-nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button:hover{
+    padding: 10px 15px;
+}
+ul {
+    list-style: none;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+header {
+    background-color:rgb(137, 172, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 90px;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+header input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+main {
+    background-color: cornflowerblue;
+}
+
+main .st-banner {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fifa-world-cup-qatar-2022-facebook-poster-design-template-45cf1b9fa02c187658c63ad0b6be731e_screen.jpg?ts=1668768128);
+    /*background-image: url(https://i.pinimg.com/236x/ea/c8/87/eac88744a1e4a54c083a920f4fdb1e01.jpg)*/
+
+}
+h1{
+    font-size: 65px;
+    color: white;
+    padding: 10px;
+    position:absolute; 
+    z-index:1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8pt;
+}
+.prf-title{
+    font-size: 65px;
+    color: black;
+    padding: 10px;
+    margin-left: 15px;
+    position:absolute; 
+    z-index:0;
+    background-color:cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8pt;
+    border-radius: 25px;
+}
+h2{
+    margin-top: 30px;
+}
+.st-teams {
+    text-align: center;
+    
+}
+.st-teams h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.cont-cards{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cont-card {
+    margin: 10px;
+    background-color:rgb(137, 172, 238);
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+justify-self: center;
+gap: 20px;
+}
+
+.cont-card img {
+    width: 250px;
+}
+
+.cont-card .cont-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;/*separa los elementos*/
+}
+.cont-card h3 .cont-card p .cont-card img{
+    padding-bottom: 10px;
+}
+
+/*seccion 3- Contacto*/
+.st-conts{
+    backface-visibility: visible;
+}
+.st-conts h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.st-conts form{
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+align-items: center;
+}
+.st-conts form *{
+    width: 100%;
+    margin: 5px 0;
+}
+.st-conts form input textarea{
+    background-color: white;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    outline: 1px solid grey;
+    border-radius: 5px;
+}
+.st-conts form button{
+width: auto;
+
+
+}
+footer {
+    background-color:lightskyblue;
+}
+.cont-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.cont-footer div{
+    margin-bottom: 10px;
+    width: 150px;
+}
+.cont-footer div h5{
+padding: 6px;
+border: 1px solid grey;
+background-color:cornflowerblue;
+text-align: center;
+}
+.cont-footer div ul, .cont-footer div p{
+    margin-top: 10px;
+}
+.cont-copy{
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media(max-width:880px){
+    .cont-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .st-conts form{
+        width: 100px;
+    } 
+    .cont-footer{
+        flex-direction: column;        
+    }
+   
+    .cont-footer div{
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+}
+
+@media(max-width:480px){
+    .cont-cards{
+        grid-template-columns: 1fr;
+    }
+    .st-conts form{
+        width: 100px;
+        
+    
+    }
+}
