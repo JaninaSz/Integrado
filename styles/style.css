@@ -15,7 +15,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: auto;
 }
 button {
     background-color: transparent;
@@ -80,6 +80,7 @@ main .st-banner {
     /*background-image: url(https://i.pinimg.com/236x/ea/c8/87/eac88744a1e4a54c083a920f4fdb1e01.jpg)*/
 
 }
+
 h1{
     font-size: 65px;
     color: white;
@@ -100,6 +101,7 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 8pt;
     border-radius: 25px;
+    font-weight: bold; 
 }
 h2{
     margin-top: 30px;
@@ -202,6 +204,13 @@ text-align: center;
 }
 
 @media(max-width:880px){
+    
+    h1{
+        font-size: 35px;
+            }
+    .prf-title{
+font-size: 35px;
+    }
     .cont-cards{
         grid-template-columns: 1fr 1fr;
     }
@@ -220,6 +229,12 @@ text-align: center;
 }
 
 @media(max-width:480px){
+    h1{
+        font-size: 35px;
+            }
+    .prf-title{
+font-size: 35px;
+    }
     .cont-cards{
         grid-template-columns: 1fr;
     }
